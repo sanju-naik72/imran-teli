@@ -36,4 +36,4 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=sanju-naik72_imran-teli_c3fe6245-6923-4543-a645-b6868d5e1415 -Dsonar.projectName='imran-teli'
+        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=sanju-naik72_imran-teli_c3fe6245-6923-4543-a645-b6868d5e1415 -Dsonar.projectName='imran-teli'  -Dsonar.branch.name='local-setup'
